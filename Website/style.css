@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+:root {
+	--robot: "Roboto", sans-serif;
+	--poppins: "Poppins", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #181a1b;
+	min-width: 100%;
+	max-height: 100vh;
+	color: aliceblue;
+	font-family: var(--poppins);
+}
+li {
+	list-style-type: none;
+}
+
+.myname {
+	padding: 10px;
+}
+.myname img {
+	width: 275px;
+}
+
+/*header section*/
+.header {
+	padding: 2.5rem;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 130px;
+}
+.header_contents {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-right: 10px;
+}
+.header_contents_list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	gap: 10px;
+}
+
+.content_list {
+	color: #989898;
+	margin: 1em;
+	padding: 5px;
+	font-weight: 600;
+}
+
+.content_list:hover {
+	border-radius: 2px;
+	border-style: none;
+	border-bottom-style: solid;
+	cursor: pointer;
+}
+/*Toogle Swtich*/
+.toggle_button_container img {
+	width: 35px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.toggle_button_container img:hover {
+	background-color: rgba(240, 248, 255, 0.153);
+}
+/*Header section ends*/
+
+/*side bar left side*/
+.side_contents {
+	position: fixed;
+	width: 100px;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+.tracking_bar {
+	border: 2px solid white;
+	width: 35px;
+	height: 10px;
+	border-style: none;
+	border-bottom-style: solid;
+	transition: width 0.5s;
+}
+.tracking_bar:hover {
+	border-right-width: 50px;
+	width: 60px;
+	cursor: pointer;
+}
+.live_page_track {
+	display: flex;
+	gap: 23px;
+	width: 100%;
+	flex-flow: column;
+	align-items: center;
+}
+.scroll_down p {
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+
+.scroll_side_bar {
+	width: 55px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 10px;
+	transition: 0.5s;
+}
+@keyframes scroll {
+	from {
+		top: 0px;
+	}
+	to {
+		top: 500px;
+	}
+}
+.scroll_side_bar_animation {
+	position: relative;
+	animation-name: scroll;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+.scroll_bar {
+	border: 2px solid white;
+	width: 3px;
+	height: 125px;
+
+	border-style: none;
+	border-left-style: solid;
+}
+
+/*main container*/
+.main-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	/* background-color: #ccc;
+	opacity: 0.5; */
+}
+
+.centerAndsidecontent {
+	display: flex;
+	flex-flow: row;
+	top: 130px;
+	position: relative;
+	left: 100px;
+	width: 93%;
+	height: 583px;
+}
+.right-sidebar {
+	width: 8%;
+	position: relative;
+	height: 583px;
+	gap: 20px;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-sidebar div {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-sidebar-contents img {
+	width: 30px;
+	height: 30px;
+}
+
+.right-sidebar-contents img:hover {
+	width: 40px;
+	height: 40px;
+}
+
+.main-content {
+	top: 20px;
+	position: relative;
+	font-family: var(--poppins);
+}
+
+.bio {
+	visibility: hidden;
+	font-size: 20px;
+	transition: opacity 1s;
+	opacity: -10;
+	color: #989898;
+	position: relative;
+	width: 80%;
+	left: 145px;
+}
+
+.bio-transform {
+	visibility: visible;
+	opacity: 1;
+}
+.bio span {
+	color: white;
+}
+
+.main-container::-webkit-scrollbar {
+	display: none;
+}
+
+blockquote {
+	text-align: justify;
+}
+
+.mode {
+	background-color: aliceblue;
+	color: #181a1b;
+}
+/*contact page starts*/
+.contact-page {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	top: 20px;
+}
+
+.contact-container {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	flex-flow: column wrap;
+}
+
+#contact-form-id {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-form-id input,
+textarea,
+button {
+	width: 100px;
+}
+/*contact page Ends*/

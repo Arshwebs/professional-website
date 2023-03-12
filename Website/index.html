@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="shortcut icon" href="../assets/Resumeicon-black.png" type="image/x-icon">
+		<title>Arsh | Personal site</title>
+	</head>
+	<body>
+		<!-- Header starts -->
+		<div class="header">
+			<div class="myname"><img src="../assets/Name.png" alt="" id="name" /></div>
+			<div class="header_contents">
+				<ul class="header_contents_list">
+					<li class="content_list" ><a href="bio">Bio</a></li>
+					<li class="content_list" onclick="scrollAnimationend()">
+						know-how</li>
+					<li class="content_list">Creations</li>
+					<li class="content_list"><a href="#contact-form-id" id="reach-out">Reach out</a></li>
+				</ul>
+				<div class="toggle_button_container">
+					<img src="../assets/light_mode.png" onclick="mode(this)" alt="mode" id="mode" title="Dark/Light" >
+				</div>
+			</div>
+		</div>
+		<!-- Header--ends -->
+		<!-- Sidebar--starts -->
+		<div class="side_contents">
+			<div class="live_page_track">
+				<div class="tracking_bar"></div>
+				<div class="tracking_bar"></div>
+				<div class="tracking_bar"></div>
+				<div class="tracking_bar"></div>
+			</div>
+			<div class="scroll_side_bar">
+				<div class="scroll_down"><p>SCROLL DOWN</p></div>
+				<div class="scroll_bar"></div>
+			</div>
+		</div>
+		<!-- sidebar--ends -->
+		<!-- Main--content--starts -->
+		<div class="centerAndsidecontent">
+			<div class="main-container">
+				<div class="main-content">
+					<div class="bio">
+						<p>
+							<span class="intro"><b>Hello!</b></span>
+							<br />
+							<span class="intro"><b>I'am Mohamed Arsath.</b></span> 
+							<br />
+							<br />
+
+							<blockquote> I am a highly motivated and results-driven web developer with 2 years of experience in Quality Assurance (QA). My passion for technology and software
+							development has led me to specialize in MERN stack development. I have extensive knowledge and experience in creating and implementing effective quality
+							assurance processes, ensuring that all projects meet the highest standards of quality and functionality.</blockquote>
+							<br />
+							<blockquote> With my experience and education, I am confident in my ability to design and develop innovative web applications that provide a seamless user
+							experience. I am a quick learner, and I am always looking for new challenges and opportunities to expand my skills and knowledge. I believe in working
+							collaboratively with teams to bring ideas to life, and I am committed to delivering high-quality solutions that meet or exceed expectations.</blockquote>
+							<br />
+							<blockquote>Whether working on projects independently or as part of a team, I always strive to deliver the best possible outcomes for clients. I am eager to use my
+							experience and skills to contribute to the success of your organization.</blockquote>
+						</p>
+					</div>
+				</div>
+				<div class="contact-page">
+					<div class="contact-container">
+					<div>Contact</div>
+					<div id="contact">
+					<form action="" id="contact-form-id">
+						<input type="text" placeholder="Name">
+						<input type="email" placeholder="Email">
+						<textarea name="" id="contact-text-area" cols="30" rows="10"></textarea>
+						<button type="submit">Submit</button>
+					</form>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- Main--content--ends -->
+			<!-- Right-side-bar-start -->
+			<div class="right-sidebar">
+				<div class="right-sidebar-contents">
+					<a href="https://github.com/Arsh700" target="_blank"><img src="../assets/github-white.png" alt="Github_logo" title="Github" id="github"/></a>
+				</div>
+				<div class="right-sidebar-contents">
+					<a href=""><img src="../assets/linkedin-white.png" alt="linkedin" title="linkedin" id="linkedin" /></a>
+				</div>
+				<div class="right-sidebar-contents">
+					<a href=""><img src="../assets/Resume-icon-white.png" alt="Resume" title="Resume-Download" id="resume"/></a>
+				</div>
+			</div>
+			<!-- Right-side-bar-end -->
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
